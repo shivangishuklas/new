@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="static/styleMain60.css">
+	<title> Generate Music </title>
+	</head>
+	<body>
+		<div class="sidebar">
+		  <a href="{{ url_for('index')}}">Home</a>
+		  <a href="{{ url_for('about') }}">About</a>
+		  <a class="active" href="{{ url_for('musgen')}}">Generate Music</a>
+		  <a href="{{ url_for('contact') }}">Contact</a>
+		</div>
+		<div class="content">
+		 	<div class="heading">
+		  		<h2> Generate Music Inference </h2>
+		  	</div>
+		  	<audio controls>
+		  		<source src="static/mtest.mp3" type="audio/mp3">
+		  	</audio>
+		  	<audio controls>
+		  		<source src="static/mtest1.mp3" type="audio/mp3">
+		  	</audio>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="static/styleMain60.css">
+	<title> Index </title>
+	</head>
+	<body>
+
+		<div class="sidebar">
+		  <a class="active" href="{{ url_for('index')}}">Home</a>
+		  <a href="{{ url_for('about') }}">About</a>
+		  <a href="{{ url_for('musgen')}}">Generate Music</a>
+		  <a href="{{ url_for('contact') }}">Contact</a>
+		</div>
+
+		<div class="content">
+		  <div class="heading">
+		  	<h1> Music Generation </h1>
+		  	<p> This application lets you generate music based on your choice :D </p>
+		  	<p> You can choose a particular genre and our model will generate the music to soothe your ears</p>
+		  <div>
+		</div>
+
+	</body>
+</html>

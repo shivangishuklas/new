@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="static/styleMain60.css">
+	<title> Generate Music </title>
+	</head>
+	<body>
+		<div class="sidebar">
+		  <a href="{{ url_for('index')}}">Home</a>
+		  <a href="{{ url_for('about') }}">About</a>
+		  <a class="active" href="{{ url_for('musgen')}}">Generate Music</a>
+		  <a href="{{ url_for('contact') }}">Contact</a>
+		</div>
+		<div class="content">
+		 	<div class="heading">
+		  		<h2> Generate Music  </h2>
+		  	</div>
+		  	<div class="searchform">
+			  	<form action="{{ url_for('musgen') }}" id="musgen" method="post">
+			  		<!-- <h4> select the type mentioned below</h4> -->
+	  				<!-- <input type="text" id="search" name="search" placeholder="Search.."/> -->
+
+	  				<br> </br>
+	  				<input formaction="{{ url_for('musgenInf') }}" id="searchbtn" name="searchbtn" type="submit" value="Generate (Inference)"/>
+	  				<!-- <input formaction="{{ url_for('musgenInt') }}" id="searchbtn" name="searchbtn" type="submit" value="Generate (Interpolation)"/> -->
+				</form>
+		  	</div>
+		</div>
+		
+	</body>
+</html>
